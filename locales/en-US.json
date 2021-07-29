@@ -1,0 +1,51 @@
+{
+  "locales": {
+    "zh-CN": "zh-CN",
+    "en-US": "en-US"
+  },
+  "index": {
+    "title": "Home",
+    "navbar":{
+      "home": "Home",
+      "about": "About",
+      "work": "Work",
+      "project": "Project",
+      "contact": "Contact"
+    },
+    "about": {
+      "name": "Name",
+      "profession": "Profession",
+      "email": "Email",
+      "phone": "Phone",
+      "skill": "Skill",
+      "education": "Education",
+      "introduction": "Introduction",
+      "tag": "Tag"
+    },
+    "form": {
+      "name": "Name",
+      "nameMessage": "Please input name!",
+      "email": "Email",
+      "emailMessage": "Please input email!",
+      "validEmailMessage": "The input is not valid E-mail",
+      "phoneNumber": "Phone Number",
+      "phoneNumberMessage": "Please input phone number!",
+      "message": "Message",
+      "messageMessage": "Please input message!",
+      "send": "Send"
+    }
+  },
+  "login": {
+    "title": "Login",
+    "form": {
+      "userName": "Username",
+      "userNameMessage": "Please input your username",
+      "password": "password",
+      "passwordMessage": "Please input your Password",
+      "rememberPassword": "Remember",
+      "forgotPassword": "Forgot password",
+      "login": "Log in",
+      "registerNow": "Register Now"
+    }
+  }
+}

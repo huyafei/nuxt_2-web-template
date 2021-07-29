@@ -1,0 +1,54 @@
+{
+  "locales": {
+    "zh-CN": "中文",
+    "en-US": "英文"
+  },
+  "index": {
+    "title": "首页",
+    "navbar":{
+      "home": "首页",
+      "about": "关于",
+      "work": "工作",
+      "project": "项目",
+      "contact": "联系"
+    },
+    "about": {
+      "name": "姓名",
+      "profession": "职业",
+      "email": "邮箱",
+      "phone": "电话",
+      "skill": "技能",
+      "education": "教育",
+      "introduction": "介绍",
+      "tag": "标签"
+    },
+    "form": {
+      "name": "名字",
+      "nameMessage": "请输入名字",
+      "email": "邮箱",
+      "emailMessage": "请输入邮箱",
+      "validEmailMessage": "输入不是有效的邮箱",
+      "phoneNumber": "电话号码",
+      "phoneNumberMessage": "请输入电话号码",
+      "message": "留言",
+      "messageMessage": "请输入留言",
+      "send": "发送"
+    }
+  },
+  "login": {
+    "title": "登录",
+    "form": {
+      "userName": "用户名",
+      "userNameMessage": "请输入用户名",
+      "password": "密码",
+      "passwordMessage": "请输入密码",
+      "rememberPassword": "记住密码",
+      "forgotPassword": "忘记密码",
+      "login": "登录",
+      "registerNow": "立即注册"
+    }
+  },
+  "register": {
+
+  }
+}

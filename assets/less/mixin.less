@@ -1,0 +1,35 @@
+.size(@W, @H) {
+  width: @W;
+  height: @H;
+}
+
+.background(@url){
+  background: url(@url);
+  background-size:100% 100%;
+}
+.text-align(@TA:center){
+  text-align:@TA;
+}
+/*flex*/
+.font(@FS,@C:null){
+  font-size:@FS ;
+  color: @C;
+}
+.flex(@FD:row,@JF:flex-start,@AI:center){
+  display: flex;
+  flex-direction: @FD;
+  justify-content: @JF;
+  align-items: @AI;
+}
+.flex-r(@JF:flex-start,@AI:center){
+  display: flex;
+  flex-direction:row;
+  justify-content: @JF;
+  align-items: @AI;
+}
+.flex-c(@JF:flex-start,@AI:center){
+  display: flex;
+  flex-direction:column;
+  justify-content: @JF;
+  align-items: @AI;
+}
