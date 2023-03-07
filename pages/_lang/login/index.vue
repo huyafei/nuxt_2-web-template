@@ -114,6 +114,13 @@ export default {
       this.form.validateFields((err, values) => {
         if (!err) {
           console.log('Received values of form: ', values)
+
+          // this.$axios.post('/api/message', { ...data }).then((res) => {
+          //   if (res.data.code === 200) {
+          //     this.$cookies.set('SENDMSG_TIME', Number(SENDMSG_TIME) + 1, { expires: t - dateTimeT })
+          //     this.$message.success('发送成功')
+          //   }
+          // })
         }
       })
     }

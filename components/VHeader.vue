@@ -43,15 +43,6 @@
         </a-select>
       </a-col>
     </a-row>
-    <a-col :md="0" :xs="24" :sm="24" class="v-drawer">
-      <a-anchor :affix="false" wrapper-class="v-a-anchor" :offset-top="64" :style="showDrawer?'':{maxHeight:0}" @click="showDrawer=false">
-        <a-anchor-link href="#home" :title="$t('index.navbar.home')" />
-        <a-anchor-link href="#about" :title="$t('index.navbar.about')" />
-        <a-anchor-link href="#work" :title="$t('index.navbar.work')" />
-        <a-anchor-link href="#project" :title="$t('index.navbar.project')" />
-        <a-anchor-link href="#contact" :title="$t('index.navbar.contact')" />
-      </a-anchor>
-    </a-col>
   </header>
 </template>
 <script>

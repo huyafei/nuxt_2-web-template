@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Cookies from 'js-cookie'
+import {Cookies} from '@vensst/js-toolkit'
 const PREFIX = 'web'
 const cookies = {
   set (name, value, expires, path) {

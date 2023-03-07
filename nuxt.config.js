@@ -6,16 +6,20 @@ export default {
       lang: 'zh-CN'
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1, ,user-scalable=no,shrink-to-fit=no,minimum-scale=1, maximum-scale=1' },
-      { hid: 'description', name: 'description', content: '胡亚飞的个人主页' }
+      {charset: 'utf-8'},
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1, ,user-scalable=no,shrink-to-fit=no,minimum-scale=1, maximum-scale=1'
+      },
+      {hid: 'description', name: 'description', content: '胡亚飞的个人主页'},
+      {name: 'format-detection', content: 'telephone=no'}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: '/css/animate.css' }
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
+      {rel: 'stylesheet', href: '/css/animate.css'}
     ],
     script: [
-      { src: '/js/wow.min.js', async: true, defer: true }
+      {src: '/js/wow.min.js', async: true, defer: true}
     ]
   },
 
@@ -38,16 +42,15 @@ export default {
   // mode: 'universal',
   // 路由配置
   router: {
-    middleware: ['i18n'] // 路由中间件
+    middleware: ['i18n','auth'] // 路由中间件
   },
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '@/plugins/antd-ui',
-    '@/plugins/component',
     '@/plugins/i18n.js',
     '@/plugins/cookies.js',
     '@/plugins/axios.js',
-    { src: '@/plugins/js-toolkit-fn.js', ssr: false }
+    {src: '@/plugins/js-toolkit.js', ssr: false}
   ],
   generate: {
     // routes: ['/', '/about', '/zh-CN', '/zh-CN/about']
@@ -58,16 +61,17 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module'
+    '@nuxt/typescript-build',
+    '@nuxtjs/style-resources',
+    'nuxt-windicss',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios', '@nuxtjs/style-resources'
+    '@nuxtjs/axios',
   ],
-  env: {
-  },
+  env: {},
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     BaseURL: 'http://nuxt-web-template.vensst.com',
@@ -85,6 +89,5 @@ export default {
     }
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
+  build: {}
 }
